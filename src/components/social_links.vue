@@ -9,6 +9,9 @@
     <a href="https://www.youtube.com/@DevLipeLacross" class="social-link youtube" title="YouTube">
       <span>YouTube</span>
     </a>
+    <a href="https://github.com/LipeLacross" class="social-link github" title="GitHub">
+      <span>GitHub</span>
+    </a>
     <div class="social-link portfolio" title="Em breve">
       <span>Em breve</span>
     </div>
@@ -16,7 +19,6 @@
 </template>
 
 <script setup>
-// Pode adicionar scripts para animações aqui, se necessário
 </script>
 
 <style scoped>
@@ -25,8 +27,7 @@
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  margin-top: 0rem;
-  margin-bottom: 5rem;
+  margin-top: 1rem;
 }
 
 @keyframes buttonHover {
@@ -71,7 +72,11 @@
   background-color: #c4302b;
 }
 
+.github {
+  background-color: #333; /* Cor para GitHub */
+}
+
 .portfolio {
-  background-color: #333;
+  background-color: #000000
 }
 </style>
