@@ -12,7 +12,7 @@
       <img src="/src/assets/youtube.png" alt="YouTube" class="social-icon" />
       <span>YouTube</span>
     </a>
-    <a href="https://github.com/seu-usuario-do-github" class="social-link github" title="GitHub">
+    <a href="https://github.com/lipelacross" class="social-link github" title="GitHub">
       <img src="/src/assets/github.png" alt="GitHub" class="social-icon" />
       <span>GitHub</span>
     </a>
