@@ -6,6 +6,7 @@
           alt="Foto de Felipe Moreira"
           class="profile-pic"
           @click="toggleAnimation"
+          :class="{ animate: isAnimating }"
       />
       <p class="name">Felipe Moreira</p>
       <p class="role">Front-End Developer</p>
@@ -64,23 +65,12 @@ body, html {
   margin-bottom: 0rem;
   cursor: pointer; /* Adiciona cursor de ponteiro ao passar o mouse */
   transition: transform 0.3s ease; /* Transição suave no efeito de transformação */
+  animation: fadeIn 2s forwards; /* Adiciona a animação de fade-in */
+  animation-fill-mode: backwards; /* Mantém o estado final da animação */
 }
 
 .profile-pic:hover {
   transform: scale(1.2); /* Aumenta um pouco a escala ao passar o mouse */
-}
-
-.profile-pic.animate {
-  animation: rotateProfile 1s linear infinite; /* Animação quando 'isAnimating' for true */
-}
-
-@keyframes rotateProfile {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 .name {
@@ -88,6 +78,8 @@ body, html {
   font-size: 1.8rem;
   margin: 0;
   color: #333; /* Garante que o texto do nome seja legível */
+  opacity: 0;
+  animation: fadeInText 1s forwards 1s; /* Adiciona um atraso para a animação do texto */
 }
 
 .role {
@@ -95,6 +87,8 @@ body, html {
   font-size: 1.2rem;
   margin: 0;
   color: #333; /* Garante que o texto da função seja legível */
+  opacity: 0;
+  animation: fadeInText 1s forwards 1.2s; /* Adiciona um atraso para a animação do texto */
 }
 
 /* Animação de fundo */
@@ -112,20 +106,22 @@ body {
     background-position: 100% 100%;
   }
 }
-.name, .role {
-  opacity: 0;
-  animation: bounceIn 1s forwards;
-}
-
-.name, .role {
-  opacity: 0;
-  animation: fadeIn 1s forwards;
-}
 
 @keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
