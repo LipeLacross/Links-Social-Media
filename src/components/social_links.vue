@@ -22,10 +22,23 @@
 <style scoped>
 .social-links {
   display: flex;
-  flex-direction: column; /* Empilhamento vertical */
+  flex-direction: column;
   align-items: center;
-  gap: 1rem; /* Espaçamento entre as caixas */
-  margin-top: 2rem;
+  gap: 1rem;
+  margin-top: 0rem;
+  margin-bottom: 5rem;
+}
+
+@keyframes buttonHover {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .social-link {
@@ -39,22 +52,23 @@
   font-weight: bold;
   cursor: pointer;
   transition: transform 0.3s ease, background-color 0.3s ease;
+  animation: buttonHover 3s infinite;
 }
 
 .social-link:hover {
-  transform: scale(1.1);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .instagram {
-  background-color: #833ab4; /* Cor roxa para o Instagram */
+  background-color: #833ab4;
 }
 
 .linkedin {
-  background-color: #0a66c2; /* Cor do LinkedIn */
+  background-color: #0a66c2;
 }
 
 .youtube {
-  background-color: #c4302b; /* Cor do YouTube */
+  background-color: #c4302b;
 }
 
 .portfolio {
