@@ -16,11 +16,11 @@ import social_links from './components/social_links.vue'
 <style>
 body, html {
   padding: 0;
+  margin: 10px 40px 100px;
   height: 100%;
   width: 100%;
   font-family: Arial, sans-serif;
   overflow: hidden; /* Evita que elementos animados saiam da visualização */
-  margin: 0px 40px 100px;
 }
 
 .app {
@@ -64,6 +64,12 @@ body, html {
 }
 
 /* Animação de fundo */
+body {
+  background: linear-gradient(135deg, #FFDE59, #ffffff, #FFDE59);
+  background-size: 900% 900%;
+  animation: moveBackground 10s linear infinite;
+}
+
 @keyframes moveBackground {
   0% {
     background-position: 0% 0%;
@@ -71,17 +77,5 @@ body, html {
   100% {
     background-position: 100% 100%;
   }
-}
-
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, #FFDE59, #ffffff, #FFDE59);
-  animation: moveBackground 10s linear infinite;
-  z-index: -1; /* Mova o elemento abaixo do conteúdo */
 }
 </style>
