@@ -8,10 +8,12 @@
           @click="toggleAnimation"
           :class="{ animate: isAnimating }"
       />
-      <p class="name">Felipe Moreira</p>
-      <p class="role">Front-End Developer</p>
+      <div class="info-container">
+        <p class="name">Felipe Moreira</p>
+        <p class="role">Front-End Developer</p>
+        <social_links />
+      </div>
     </div>
-    <social_links />
   </div>
 </template>
 
@@ -29,21 +31,24 @@ function toggleAnimation() {
 <style>
 body, html {
   padding: 0;
-  margin: 10px 40px 100px;
+  margin: 0;
   height: 100%;
   width: 100%;
   font-family: Arial, sans-serif;
   overflow: hidden; /* Evita que elementos animados saiam da visualização */
   color: #333; /* Cor padrão para o texto */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .app {
   position: relative;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
+  width: 100%;
   text-align: center;
   z-index: 1; /* Garante que o conteúdo esteja acima do fundo animado */
 }
@@ -54,7 +59,7 @@ body, html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 1rem;
+  justify-content: center;
 }
 
 .profile-pic {
@@ -62,7 +67,6 @@ body, html {
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 0rem;
   cursor: pointer; /* Adiciona cursor de ponteiro ao passar o mouse */
   transition: transform 0.3s ease; /* Transição suave no efeito de transformação */
   animation: fadeIn 2s forwards; /* Adiciona a animação de fade-in */
@@ -73,11 +77,21 @@ body, html {
   transform: scale(1.2); /* Aumenta um pouco a escala ao passar o mouse */
 }
 
+.info-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 35px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
 .name {
   font-weight: 800;
   font-size: 1.8rem;
   margin: 0;
-  color: #333; /* Garante que o texto do nome seja legível */
+  color: #333;
   opacity: 0;
   animation: fadeInText 1s forwards 1s; /* Adiciona um atraso para a animação do texto */
 }
@@ -86,7 +100,7 @@ body, html {
   font-weight: bold;
   font-size: 1.2rem;
   margin: 0;
-  color: #333; /* Garante que o texto da função seja legível */
+  color: #333;
   opacity: 0;
   animation: fadeInText 1s forwards 1.2s; /* Adiciona um atraso para a animação do texto */
 }
