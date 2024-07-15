@@ -10,7 +10,7 @@
       />
       <div class="info-container">
         <p class="name">Felipe Moreira</p>
-        <p class="role">Front-End Developer</p>
+        <p class="role">Developer</p>
         <social_links />
       </div>
     </div>
