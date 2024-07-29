@@ -1,23 +1,23 @@
 <template>
   <div class="social-links">
     <a href="https://www.instagram.com/lipelacross/" class="social-link instagram" title="Instagram">
-      <img src="/src/assets/instagram.png" alt="Instagram" class="social-icon" />
+      <img src="@/assets/instagram.png" alt="Instagram" class="social-icon" />
       <span>Instagram</span>
     </a>
     <a href="https://www.linkedin.com/in/lipelacross-developer/" class="social-link linkedin" title="LinkedIn">
-      <img src="/src/assets/linkedin.png" alt="LinkedIn" class="social-icon" />
+      <img src="@/assets/linkedin.png" alt="LinkedIn" class="social-icon" />
       <span>LinkedIn</span>
     </a>
     <a href="https://www.youtube.com/@DevLipeLacross" class="social-link youtube" title="YouTube">
-      <img src="/src/assets/youtube.png" alt="YouTube" class="social-icon" />
+      <img src="@/assets/youtube.png" alt="YouTube" class="social-icon" />
       <span>YouTube</span>
     </a>
     <a href="https://github.com/lipelacross" class="social-link github" title="GitHub">
-      <img src="/src/assets/github.png" alt="GitHub" class="social-icon" />
+      <img src="@/assets/github.png" alt="GitHub" class="social-icon" />
       <span>GitHub</span>
     </a>
     <div class="social-link portfolio" title="Em breve">
-      <img src="/src/assets/curriculum.png" alt="GitHub" class="social-icon" />
+      <img src="@/assets/curriculum.png" alt="Portfolio" class="social-icon" />
       <span>Em breve</span>
     </div>
   </div>
@@ -34,6 +34,7 @@
   gap: 1rem;
   margin-top: 1rem;
 }
+
 
 @keyframes buttonHover {
   0% {
@@ -59,11 +60,14 @@
   cursor: pointer;
   transition: transform 0.3s ease, background-color 0.3s ease;
   animation: buttonHover 3s infinite;
+  text-decoration: none;
 }
+
 .social-icon {
-  width: 30px; /* Ajuste conforme necessário */
+  width: 30px;
   height: auto;
-  margin-right: 10px; /* Espaço entre o ícone e o texto */
+  margin-right: 10px;
+
 }
 
 .social-link:hover {
@@ -83,10 +87,10 @@
 }
 
 .github {
-  background-color: #333; /* Cor para GitHub */
+  background-color: #333;
 }
 
 .portfolio {
-  background-color: #000000
+  background-color: #000000;
 }
 </style>

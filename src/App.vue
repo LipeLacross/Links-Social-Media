@@ -2,7 +2,7 @@
   <div class="app">
     <div class="overlay">
       <img
-          src="/src/assets/profile.png"
+          src="@/assets/profile.png"
           alt="Foto de Felipe Moreira"
           class="profile-pic"
           @click="toggleAnimation"
@@ -11,7 +11,7 @@
       <div class="info-container">
         <p class="name">Felipe Moreira</p>
         <p class="role">Developer</p>
-        <social_links />
+        <SocialLinks />
       </div>
     </div>
   </div>
@@ -19,7 +19,7 @@
 
 <script setup>
 import { ref } from 'vue';
-import social_links from './components/social_links.vue';
+import SocialLinks from './components/social_links.vue';
 
 const isAnimating = ref(false);
 
@@ -29,19 +29,21 @@ function toggleAnimation() {
 </script>
 
 <style>
+/* Estilos gerais */
 body, html {
   padding: 0;
   margin: 0;
   height: 100%;
   width: 100%;
   font-family: Arial, sans-serif;
-  overflow: hidden; /* Evita que elementos animados saiam da visualização */
-  color: #333; /* Cor padrão para o texto */
+  overflow: hidden;
+  color: #333;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/* Estilo do componente principal */
 .app {
   position: relative;
   display: flex;
@@ -50,12 +52,12 @@ body, html {
   height: 100%;
   width: 100%;
   text-align: center;
-  z-index: 1; /* Garante que o conteúdo esteja acima do fundo animado */
+  z-index: 1;
 }
 
 .overlay {
   position: relative;
-  z-index: 2; /* Garante que o conteúdo esteja acima do fundo animado */
+  z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -67,14 +69,14 @@ body, html {
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
-  cursor: pointer; /* Adiciona cursor de ponteiro ao passar o mouse */
-  transition: transform 0.3s ease; /* Transição suave no efeito de transformação */
-  animation: fadeIn 2s forwards; /* Adiciona a animação de fade-in */
-  animation-fill-mode: backwards; /* Mantém o estado final da animação */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  animation: fadeIn 2s forwards;
+  animation-fill-mode: backwards;
 }
 
 .profile-pic:hover {
-  transform: scale(1.2); /* Aumenta um pouco a escala ao passar o mouse */
+  transform: scale(1.2);
 }
 
 .info-container {
@@ -93,7 +95,7 @@ body, html {
   margin: 0;
   color: #333;
   opacity: 0;
-  animation: fadeInText 1s forwards 1s; /* Adiciona um atraso para a animação do texto */
+  animation: fadeInText 1s forwards 1s;
 }
 
 .role {
@@ -102,7 +104,7 @@ body, html {
   margin: 0;
   color: #333;
   opacity: 0;
-  animation: fadeInText 1s forwards 1.2s; /* Adiciona um atraso para a animação do texto */
+  animation: fadeInText 1s forwards 1.2s;
 }
 
 /* Animação de fundo */
