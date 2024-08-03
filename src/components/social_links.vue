@@ -16,10 +16,10 @@
       <img src="@/assets/github.png" alt="GitHub" class="social-icon" />
       <span>GitHub</span>
     </a>
-    <div class="social-link portfolio" title="Em breve">
+    <a href="https://lipelacross.netlify.app/" class="social-link portfolio" title="Em breve">
       <img src="@/assets/curriculum.png" alt="Portfolio" class="social-icon" />
-      <span>Em breve</span>
-    </div>
+      <span>Construindo...</span>
+    </a>
   </div>
 </template>
 
