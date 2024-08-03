@@ -38,8 +38,8 @@ Uma página feita com Vue para disponibilizar links de redes sociais. Este proje
 1. **Clone o repositório:**
 
    ```bash
-   git clone https://github.com/seu-usuario/links-social-media.git
-   cd links-social-media
+   git clone https://github.com/LipeLacross/Links-Social-Media.git
+   cd Links-Social-Media
 - Instale as dependências:
 npm install
 - Rode o projeto localmente:
