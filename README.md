@@ -40,12 +40,15 @@ Uma página feita com Vue para disponibilizar links de redes sociais. Este proje
    ```bash
    git clone https://github.com/LipeLacross/Links-Social-Media.git
    cd Links-Social-Media
-- Instale as dependências:
+   ```
+2. **Instale as dependências**:
 npm install
-- Rode o projeto localmente:
+
+3. **Rode o projeto localmente**:
 npm run serve
-- Acesse o projeto no navegador:
+
+4. **Acesse o projeto no navegador**:
 Abra http://localhost:8080 para visualizar o projeto.
 
-### Deploy
+### 🌐 Deploy
 O projeto está disponível online em: https://redes-sociais-lipelacross.vercel.app/
