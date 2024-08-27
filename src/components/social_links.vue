@@ -18,7 +18,7 @@
     </a>
     <a href="https://lipelacross.netlify.app/" class="social-link portfolio" title="Em breve">
       <img src="@/assets/curriculum.png" alt="Portfolio" class="social-icon" />
-      <span>Construindo...</span>
+      <span>Portfólio</span>
     </a>
   </div>
 </template>

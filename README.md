@@ -9,7 +9,7 @@ Uma página feita com Vue para disponibilizar links de redes sociais. Este proje
 - **Animações**: Inclui animações suaves para elementos ao passar o mouse e durante a renderização inicial.
 
 ### Exemplo Visual do Projeto
-![image](https://github.com/user-attachments/assets/eb376c81-ca09-406b-a7bc-54faf08106b3)
+![image](https://github.com/user-attachments/assets/fafc26c6-ca88-40b2-8154-d84a004ffb60)
 
 ## ✔️ Técnicas e tecnologias utilizadas
 
