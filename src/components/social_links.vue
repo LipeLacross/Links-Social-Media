@@ -4,7 +4,7 @@
       <img src="@/assets/instagram.png" alt="Instagram" class="social-icon" />
       <span>Instagram</span>
     </a>
-    <a href="https://www.linkedin.com/in/lipelacross-developer/" class="social-link linkedin" title="LinkedIn">
+    <a href="https://www.linkedin.com/in/lipelacross-developer?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-link linkedin" title="LinkedIn">
       <img src="@/assets/linkedin.png" alt="LinkedIn" class="social-icon" />
       <span>LinkedIn</span>
     </a>
