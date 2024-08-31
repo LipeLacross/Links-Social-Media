@@ -4,7 +4,7 @@
       <img src="@/assets/instagram.png" alt="Instagram" class="social-icon" />
       <span>Instagram</span>
     </a>
-    <a href="https://www.linkedin.com/in/lipelacross-developer?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-link linkedin" title="LinkedIn">
+    <a href="https://www.linkedin.com/in/lipelacross-developer" class="social-link linkedin" title="LinkedIn">
       <img src="@/assets/linkedin.png" alt="LinkedIn" class="social-icon" />
       <span>LinkedIn</span>
     </a>
@@ -16,7 +16,7 @@
       <img src="@/assets/github.png" alt="GitHub" class="social-icon" />
       <span>GitHub</span>
     </a>
-    <a href="https://lipelacross.netlify.app/" class="social-link portfolio" title="Em breve">
+    <a href="https://lipelacrossplus.netlify.app/" class="social-link portfolio" title="Em breve">
       <img src="@/assets/curriculum.png" alt="Portfolio" class="social-icon" />
       <span>Portfólio</span>
     </a>

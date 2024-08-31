@@ -51,4 +51,4 @@ npm run serve
 Abra http://localhost:8080 para visualizar o projeto.
 
 ### 🌐 Deploy
-O projeto está disponível online em: https://redes-sociais-lipelacross.vercel.app/
+O projeto está disponível online em: https://lipelacrosslinks.netlify.app
