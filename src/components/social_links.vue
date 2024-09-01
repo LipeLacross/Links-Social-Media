@@ -55,11 +55,11 @@ function toggleAnimation() {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh; /* Garante que o componente ocupe toda a altura da tela */
+  min-height: 100vh;
   width: 100%;
-  background: transparent; /* Deixa o fundo degradê do body visível */
-  position: relative; /* Necessário para posicionar corretamente o conteúdo */
-  z-index: 1; /* Garante que o conteúdo fique acima do fundo degradê */
+  background: transparent;
+  position: relative;
+  z-index: 1;
 }
 
 /* Imagem do perfil */
@@ -72,10 +72,9 @@ function toggleAnimation() {
   transition: transform 0.3s ease;
   animation: fadeIn 2s forwards;
   animation-fill-mode: backwards;
-  margin-bottom: 20px; /* Espaço entre a imagem e o bloco branco */
+  margin-bottom: 20px;
 }
 
-/* Container com todos os elementos combinados */
 .content-container {
   display: flex;
   flex-direction: column;
@@ -86,12 +85,12 @@ function toggleAnimation() {
   border-radius: 35px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 90%;
-  max-width: 300px; /* Aumente a largura máxima se necessário */
+  max-width: 300px;
   box-sizing: border-box;
-  position: relative; /* Garante que o conteúdo tenha o fundo branco */
-  z-index: 2; /* Garante que o conteúdo branco fique acima do fundo degradê */
-  opacity: 0; /* Inicialmente invisível */
-  animation: fadeInSlideUp 1s forwards; /* Animação para o bloco branco */
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+  animation: fadeInSlideUp 1s forwards;
 }
 
 /* Informações do perfil */
@@ -210,9 +209,9 @@ function toggleAnimation() {
   font-weight: bold;
   cursor: pointer;
   transition: transform 0.3s ease, background-color 0.3s ease;
-  animation: buttonHover 3s infinite, zoomIn 2s infinite; /* Adiciona animação de zoom */
-  opacity: 0; /* Inicialmente invisível */
-  animation: fadeInSlideUp 1s forwards, zoomIn 2s infinite; /* Animação para os links */
+  animation: buttonHover 3s infinite, zoomIn 2s infinite;
+  opacity: 0;
+  animation: fadeInSlideUp 1s forwards, zoomIn 2s infinite;
 }
 
 /* Atraso para a animação de cada link */
@@ -268,7 +267,7 @@ function toggleAnimation() {
 
 /* Animação de flash para o fundo da página */
 body {
-  animation: flash 1s ease-out; /* Adiciona a animação de flash */
+  animation: flash 1s ease-out;
 }
 
 @keyframes buttonHover {

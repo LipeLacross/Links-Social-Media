@@ -9,7 +9,7 @@ html, body {
     overflow: hidden;
     color: #333;
     background: linear-gradient(600deg, #FFDD48, #ffffff);
-    background-size: 900% 900%;
+    background-size: 900% 100%;
     animation: gradientShift 10s ease infinite;
 }
 
