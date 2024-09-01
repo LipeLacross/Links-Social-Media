@@ -1,3 +1,5 @@
+## 🌐 [English Version of README](README_EN.md)
+
 # Links Social Media
 
 Uma página feita com Vue para disponibilizar links de redes sociais. Este projeto visa fornecer um local centralizado onde usuários podem acessar facilmente os links para os perfis de redes sociais.
