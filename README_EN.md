@@ -9,7 +9,8 @@ A page made with Vue to provide social media links. This project aims to offer a
 - **Animations**: Includes smooth animations for elements on hover and during initial rendering.
 
 ### Visual Example of the Project
-![image](https://github.com/user-attachments/assets/fafc26c6-ca88-40b2-8154-d84a004ffb60)
+
+![chrome-capture-2024-9-14](https://github.com/user-attachments/assets/7da67b9d-cb01-46e8-be42-8c2793d31adb)
 
 ## ✔️ Techniques and Technologies Used
 
