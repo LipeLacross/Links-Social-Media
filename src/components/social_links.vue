@@ -1,7 +1,7 @@
 <template>
   <div class="social-links">
     <img
-        src="@/assets/profile_photo_v2.png"
+        src="@/assets/Photo Profile.png"
         alt="Foto de Felipe Moreira"
         class="profile-pic"
         @click="toggleAnimation"
