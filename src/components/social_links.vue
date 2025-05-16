@@ -29,9 +29,9 @@
           <img src="@/assets/github.png" alt="GitHub" class="social-icon" />
           <span>GitHub</span>
         </a>
-        <a href="https://lipelacrossplus.netlify.app/" class="social-link portfolio" title="Em breve">
+        <a href="https://lacrosstech.site/" class="social-link portfolio" title="Em breve">
           <img src="@/assets/curriculum.png" alt="Portfolio" class="social-icon" />
-          <span>Portfólio</span>
+          <span>LacrossTech</span>
         </a>
       </div>
     </div>
@@ -262,7 +262,7 @@ function toggleAnimation() {
 }
 
 .portfolio {
-  background-color: #000000;
+  background-color: #ffcf00;
 }
 
 /* Animação de flash para o fundo da página */
