@@ -30,7 +30,7 @@
           <span>GitHub</span>
         </a>
         <a href="https://lacrosstech.site/" class="social-link portfolio" title="Em breve">
-          <img src="@/assets/curriculum.png" alt="Portfolio" class="social-icon" />
+          <img src="@/assets/bussiness.svg" alt="Portfolio" class="social-icon" />
           <span>LacrossTech</span>
         </a>
       </div>
@@ -62,17 +62,49 @@ function toggleAnimation() {
   z-index: 1;
 }
 
-/* Imagem do perfil */
 .profile-pic {
   width: 200px;
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
   cursor: pointer;
-  transition: transform 0.3s ease;
+  transition: box-shadow 0.3s, filter 0.3s;
   animation: fadeIn 2s forwards;
-  animation-fill-mode: backwards;
   margin-bottom: 20px;
+  box-shadow: 0 4px 24px #ffdd4880, 0 1.5px 6px #0001;
+  background: linear-gradient(135deg, #fffbe6 0%, #ffdd48 100%);
+  position: relative;
+  z-index: 2;
+}
+
+/* Animação ao clicar */
+.profile-pic.animate {
+  animation: profileBounce 0.9s cubic-bezier(.36,1.56,.64,1) both, profileFlash 0.5s linear;
+  box-shadow: 0 0 0 8px #ffdd4840, 0 8px 32px #ffdd4880;
+  filter: brightness(1.15) drop-shadow(0 0 18px #ffdd48aa);
+}
+
+@keyframes profileBounce {
+  0%   { transform: scale(1) rotateZ(0deg);}
+  10%  { transform: scale(1.08, 0.92) rotateZ(-6deg);}
+  30%  { transform: scale(0.95, 1.1) rotateZ(3deg);}
+  50%  { transform: scale(1.04, 0.96) rotateZ(-3deg);}
+  70%  { transform: scale(0.98, 1.02) rotateZ(2deg);}
+  90%  { transform: scale(1.02, 0.98) rotateZ(-1deg);}
+  100% { transform: scale(1) rotateZ(0deg);}
+}
+
+/* Flash de luz circular */
+@keyframes profileFlash {
+  0% {
+    box-shadow: 0 0 0 0 #ffdd48cc, 0 4px 24px #ffdd4880;
+  }
+  70% {
+    box-shadow: 0 0 0 32px #ffdd4800, 0 4px 24px #ffdd4880;
+  }
+  100% {
+    box-shadow: 0 0 0 0 #ffdd4800, 0 4px 24px #ffdd4880;
+  }
 }
 
 .content-container {
@@ -212,6 +244,8 @@ function toggleAnimation() {
   animation: buttonHover 3s infinite, zoomIn 2s infinite;
   opacity: 0;
   animation: fadeInSlideUp 1s forwards, zoomIn 2s infinite;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+
 }
 
 /* Atraso para a animação de cada link */
@@ -238,12 +272,23 @@ function toggleAnimation() {
 .social-icon {
   width: 30px;
   height: auto;
-  margin-right: 10px;
+  margin-right: 14px;
 }
 
 .social-link:hover {
   background-color: #FFDE59;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+
 }
+.social-link:active {
+  filter: brightness(0.92);
+  transform: scale(0.97);
+}
+.social-link:focus {
+  outline: 2px solid #FFDE59;
+  outline-offset: 2px;
+}
+
 
 .instagram {
   background-color: #833ab4;
@@ -263,7 +308,9 @@ function toggleAnimation() {
 
 .portfolio {
   background-color: #ffcf00;
+  color: #222 !important;
 }
+
 
 /* Animação de flash para o fundo da página */
 body {
