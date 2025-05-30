@@ -13,7 +13,7 @@
         <p class="role">Developer</p>
       </div>
       <div class="links-container">
-        <a href="https://www.instagram.com/lipelacross/" class="social-link instagram" title="Instagram">
+        <a href="https://www.instagram.com/lipelacross" class="social-link instagram" title="Instagram">
           <img src="@/assets/instagram.png" alt="Instagram" class="social-icon" />
           <span>Instagram</span>
         </a>
@@ -29,7 +29,7 @@
           <img src="@/assets/github.png" alt="GitHub" class="social-icon" />
           <span>GitHub</span>
         </a>
-        <a href="https://lacrosstech.site/" class="social-link portfolio" title="Em breve">
+        <a href="https://lacrosstech.com.br" class="social-link portfolio" title="Em breve">
           <img src="@/assets/bussiness.svg" alt="Portfolio" class="social-icon" />
           <span>LacrossTech</span>
         </a>
