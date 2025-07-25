@@ -29,8 +29,8 @@
           <img src="@/assets/github.png" alt="GitHub" class="social-icon" />
           <span>GitHub</span>
         </a>
-        <a href="https://lacrosstech.com.br" class="social-link portfolio" title="Em breve">
-          <img src="@/assets/bussiness.svg" alt="Portfolio" class="social-icon" />
+        <a href="https://lacrosstech.com.br" class="social-link portfolio" title="LacrossTech">
+          <img src="@/assets/logo.png" alt="Portfolio" class="social-icon" />
           <span>LacrossTech</span>
         </a>
       </div>
